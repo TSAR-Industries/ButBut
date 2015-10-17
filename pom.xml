@@ -108,9 +108,9 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.github.richodemus.guice-classpath-scanning</groupId>
-				<artifactId>guice-classpath-scanner</artifactId>
-				<version>1.0-SNAPSHOT</version>
+				<groupId>com.github.RichoDemus</groupId>
+				<artifactId>guice-classpath-scanning</artifactId>
+				<version>b7e7f87a04</version>
 			</dependency>
 
 			<dependency>
@@ -150,15 +150,29 @@
 						<configuration>
 							<failOnWarning>true</failOnWarning>
 							<ignoredUnusedDeclaredDependencies>
-								<ignoredUnusedDeclaredDependency>org.slf4j:slf4j-simple
+								<!-- If we want logging in a unit-test -->
+								<ignoredUnusedDeclaredDependency>
+									ch.qos.logback:logback-classic
 								</ignoredUnusedDeclaredDependency>
-								<ignoredUnusedDeclaredDependency>ch.qos.logback:logback-classic
+								<!-- Never referenced, scanned by guice -->
+								<ignoredUnusedDeclaredDependency>
+									com.github.tsar-industries.slashgif:google-image-search
 								</ignoredUnusedDeclaredDependency>
-								<ignoredUnusedDeclaredDependency>com.github.tsar-industries.slashgif:google-image-search
+								<!-- Never referenced, scanned by guice -->
+								<ignoredUnusedDeclaredDependency>
+									com.github.tsar-industries.slashgif:service
 								</ignoredUnusedDeclaredDependency>
-								<ignoredUnusedDeclaredDependency>com.github.tsar-industries.slashgif:service
+								<!-- Weird stuff, see https://github.com/TSAR-Industries/slashgif/issues/6#issuecomment-148947122 -->
+								<ignoredUnusedDeclaredDependency>
+									com.github.RichoDemus:guice-classpath-scanning
 								</ignoredUnusedDeclaredDependency>
 							</ignoredUnusedDeclaredDependencies>
+							<ignoredUsedUndeclaredDependencies>
+								<!-- Weird stuff, see https://github.com/TSAR-Industries/slashgif/issues/6#issuecomment-148947122 -->
+								<ignoreUsedUndeclaredDependency>
+									com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner
+								</ignoreUsedUndeclaredDependency>
+							</ignoredUsedUndeclaredDependencies>
 						</configuration>
 					</execution>
 				</executions>
@@ -224,4 +238,10 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 </project>
