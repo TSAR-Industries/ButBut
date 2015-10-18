@@ -36,8 +36,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.github.richodemus.guice-classpath-scanning</groupId>
-			<artifactId>guice-classpath-scanner</artifactId>
+			<groupId>com.github.RichoDemus</groupId>
+			<artifactId>guice-classpath-scanning</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax.inject</groupId>

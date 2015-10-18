@@ -3,8 +3,7 @@ slashgif
 
 Usage
 -----
-1. clone and mvn install https://github.com/RichoDemus/guice-classpath-scanning (because richo is lazy and havent made a release)
-2. mvn clean package -T1C && java -jar web/target/web-1.0-SNAPSHOT.jar server web/config.yaml
+1. mvn clean package -T1C && java -jar web/target/web-1.0-SNAPSHOT.jar server web/config.yaml
 
 URLs
 ----
