@@ -3,18 +3,12 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<groupId>com.github.tsar-industries.slashgif</groupId>
-		<artifactId>slashgif-parent</artifactId>
+		<groupId>com.github.tsar-industries.slashgif.service-layer</groupId>
+		<artifactId>service-layer</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif.search-providers</groupId>
-	<artifactId>search-providers</artifactId>
-	<packaging>pom</packaging>
-
-	<modules>
-		<module>google-image-search</module>
-		<module>api</module>
-	</modules>
+	<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
+	<artifactId>api</artifactId>
 </project>

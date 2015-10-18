@@ -9,12 +9,11 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif.search-providers</groupId>
-	<artifactId>search-providers</artifactId>
+	<groupId>com.github.tsar-industries.slashgif.frontends</groupId>
+	<artifactId>frontends</artifactId>
 	<packaging>pom</packaging>
-
 	<modules>
-		<module>google-image-search</module>
 		<module>api</module>
+		<module>slack-integration</module>
 	</modules>
 </project>

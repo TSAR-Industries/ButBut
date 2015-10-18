@@ -9,22 +9,12 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif.search-providers.google-image-search</groupId>
-	<artifactId>google-image-search</artifactId>
-
+	<groupId>com.github.tsar-industries.slashgif.search-providers.api</groupId>
+	<artifactId>api</artifactId>
 	<dependencies>
-		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.search-providers.api</groupId>
-			<artifactId>api</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
 			<artifactId>api</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
 		</dependency>
 	</dependencies>
 </project>
