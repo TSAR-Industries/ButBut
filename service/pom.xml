@@ -18,6 +18,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.tsar-industries.slashgif</groupId>
+			<artifactId>search-provder-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.tsar-industries.slashgif</groupId>
 			<artifactId>google-image-search</artifactId>
 			<scope>runtime</scope>
 		</dependency>
