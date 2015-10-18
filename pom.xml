@@ -14,7 +14,7 @@
 		<module>web</module>
 		<module>service</module>
 		<module>api</module>
-		<module>google-image-search</module>
+		<module>search-providers</module>
 	</modules>
 
 	<prerequisites>
