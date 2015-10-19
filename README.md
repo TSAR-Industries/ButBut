@@ -12,4 +12,5 @@ URLs
 
 Misc
 ----
+* Build status: [![Build Status](https://travis-ci.org/TSAR-Industries/slashgif.svg?branch=master)](https://travis-ci.org/TSAR-Industries/slashgif)
 * Banner created with [Taag](http://patorjk.com/software/taag)
