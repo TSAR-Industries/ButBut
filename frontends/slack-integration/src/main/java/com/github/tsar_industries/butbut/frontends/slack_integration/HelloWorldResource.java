@@ -1,6 +1,6 @@
-package com.github.tsar_industries.slashgif.frontends.slack_integration;
+package com.github.tsar_industries.butbut.frontends.slack_integration;
 
-import com.github.tsar_industries.slashgif.service_layer.api.Service;
+import com.github.tsar_industries.butbut.service_layer.api.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

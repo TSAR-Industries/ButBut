@@ -1,4 +1,4 @@
-package com.github.tsar_industries.slashgif.service_layer.api;
+package com.github.tsar_industries.butbut.service_layer.api;
 
 
 import java.util.Optional;
