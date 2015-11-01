@@ -3,7 +3,7 @@ slashgif
 
 Usage
 -----
-1. mvn clean package -T1C && java -jar web/target/web-1.0-SNAPSHOT.jar server web/config.yaml
+1. mvn clean install -T1C && java -jar application/target/application-1.0-SNAPSHOT.jar server config.yaml
 
 URLs
 ----

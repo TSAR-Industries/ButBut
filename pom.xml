@@ -11,10 +11,10 @@
 	<url>https://github.com/TSAR-Industries/slashgif</url>
 
 	<modules>
-		<module>web</module>
-		<module>service</module>
-		<module>api</module>
 		<module>search-providers</module>
+		<module>application</module>
+		<module>frontends</module>
+		<module>service-layer</module>
 	</modules>
 
 	<prerequisites>
@@ -34,18 +34,28 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif</groupId>
+				<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
 				<artifactId>api</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif</groupId>
+				<groupId>com.github.tsar-industries.slashgif.service-layer.service</groupId>
 				<artifactId>service</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif</groupId>
+				<groupId>com.github.tsar-industries.slashgif.search-providers.google-image-search</groupId>
 				<artifactId>google-image-search</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.tsar-industries.slashgif.search-providers.api</groupId>
+				<artifactId>api</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.tsar-industries.slashgif.frontends.slack-integration</groupId>
+				<artifactId>slack-integration</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 
@@ -156,11 +166,14 @@
 								</ignoredUnusedDeclaredDependency>
 								<!-- Never referenced, scanned by guice -->
 								<ignoredUnusedDeclaredDependency>
-									com.github.tsar-industries.slashgif:google-image-search
+									com.github.tsar-industries.slashgif.search-providers.google-image-search:google-image-search
 								</ignoredUnusedDeclaredDependency>
 								<!-- Never referenced, scanned by guice -->
 								<ignoredUnusedDeclaredDependency>
-									com.github.tsar-industries.slashgif:service
+									com.github.tsar-industries.slashgif.service-layer.service:service
+								</ignoredUnusedDeclaredDependency>
+								<ignoredUnusedDeclaredDependency>
+									com.github.tsar-industries.slashgif.frontends.slack-integration:slack-integration
 								</ignoredUnusedDeclaredDependency>
 								<!-- Weird stuff, see https://github.com/TSAR-Industries/slashgif/issues/6#issuecomment-148947122 -->
 								<ignoredUnusedDeclaredDependency>
