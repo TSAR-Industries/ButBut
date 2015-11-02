@@ -3,26 +3,27 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<groupId>com.github.tsar-industries.slashgif.service-layer</groupId>
+		<groupId>com.github.tsar-industries.butbut.service-layer</groupId>
 		<artifactId>service-layer</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif.service-layer.service</groupId>
+	<groupId>com.github.tsar-industries.butbut.service-layer.service</groupId>
 	<artifactId>service</artifactId>
+	<name>ButBut - Service</name>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
+			<groupId>com.github.tsar-industries.butbut.service-layer.api</groupId>
 			<artifactId>api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.search-providers.api</groupId>
+			<groupId>com.github.tsar-industries.butbut.search-providers.api</groupId>
 			<artifactId>api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.search-providers.google-image-search</groupId>
+			<groupId>com.github.tsar-industries.butbut.search-providers.google-image-search</groupId>
 			<artifactId>google-image-search</artifactId>
 			<scope>runtime</scope>
 		</dependency>

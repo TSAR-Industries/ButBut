@@ -2,13 +2,13 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif</groupId>
-	<artifactId>slashgif-parent</artifactId>
+	<groupId>com.github.tsar-industries.butbut</groupId>
+	<artifactId>butbut-parent</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Slashgif</name>
-	<url>https://github.com/TSAR-Industries/slashgif</url>
+	<name>ButBut - Parent</name>
+	<url>https://github.com/TSAR-Industries/ButBut</url>
 
 	<modules>
 		<module>search-providers</module>
@@ -34,27 +34,27 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
+				<groupId>com.github.tsar-industries.butbut.service-layer.api</groupId>
 				<artifactId>api</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif.service-layer.service</groupId>
+				<groupId>com.github.tsar-industries.butbut.service-layer.service</groupId>
 				<artifactId>service</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif.search-providers.google-image-search</groupId>
+				<groupId>com.github.tsar-industries.butbut.search-providers.google-image-search</groupId>
 				<artifactId>google-image-search</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif.search-providers.api</groupId>
+				<groupId>com.github.tsar-industries.butbut.search-providers.api</groupId>
 				<artifactId>api</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tsar-industries.slashgif.frontends.slack-integration</groupId>
+				<groupId>com.github.tsar-industries.butbut.frontends.slack-integration</groupId>
 				<artifactId>slack-integration</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
@@ -166,22 +166,22 @@
 								</ignoredUnusedDeclaredDependency>
 								<!-- Never referenced, scanned by guice -->
 								<ignoredUnusedDeclaredDependency>
-									com.github.tsar-industries.slashgif.search-providers.google-image-search:google-image-search
+									com.github.tsar-industries.butbut.search-providers.google-image-search:google-image-search
 								</ignoredUnusedDeclaredDependency>
 								<!-- Never referenced, scanned by guice -->
 								<ignoredUnusedDeclaredDependency>
-									com.github.tsar-industries.slashgif.service-layer.service:service
+									com.github.tsar-industries.butbut.service-layer.service:service
 								</ignoredUnusedDeclaredDependency>
 								<ignoredUnusedDeclaredDependency>
-									com.github.tsar-industries.slashgif.frontends.slack-integration:slack-integration
+									com.github.tsar-industries.butbut.frontends.slack-integration:slack-integration
 								</ignoredUnusedDeclaredDependency>
-								<!-- Weird stuff, see https://github.com/TSAR-Industries/slashgif/issues/6#issuecomment-148947122 -->
+								<!-- Weird stuff, see https://github.com/TSAR-Industries/ButBut/issues/6#issuecomment-148947122 -->
 								<ignoredUnusedDeclaredDependency>
 									com.github.RichoDemus:guice-classpath-scanning
 								</ignoredUnusedDeclaredDependency>
 							</ignoredUnusedDeclaredDependencies>
 							<ignoredUsedUndeclaredDependencies>
-								<!-- Weird stuff, see https://github.com/TSAR-Industries/slashgif/issues/6#issuecomment-148947122 -->
+								<!-- Weird stuff, see https://github.com/TSAR-Industries/ButBut/issues/6#issuecomment-148947122 -->
 								<ignoreUsedUndeclaredDependency>
 									com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner
 								</ignoreUsedUndeclaredDependency>

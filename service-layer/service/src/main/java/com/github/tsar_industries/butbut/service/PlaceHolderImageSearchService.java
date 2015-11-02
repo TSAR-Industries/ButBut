@@ -1,9 +1,9 @@
-package com.github.tsar_industries.slashgif.service;
+package com.github.tsar_industries.butbut.service;
 
 
-import com.github.tsar_industries.slashgif.service_layer.api.Image;
-import com.github.tsar_industries.slashgif.service_layer.api.Service;
-import com.github.tsar_industries.slashgif.search_providers.api.SearchProviderApi;
+import com.github.tsar_industries.butbut.service_layer.api.Image;
+import com.github.tsar_industries.butbut.service_layer.api.Service;
+import com.github.tsar_industries.butbut.search_providers.api.SearchProviderApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package com.github.tsar_industries.slashgif.application;
+package com.github.tsar_industries.butbut.application;
 
 import com.github.richodemus.guice_classpath_scanning.ClassPathScanningModule;
 import com.google.inject.Stage;
@@ -14,7 +14,7 @@ import java.lang.invoke.MethodHandles;
 /**
  * The application entrypoint, initializes guice and starts dropwizard
  */
-public class SlashgifApplication extends Application<SlashgifConfiguration>
+public class ButButApplication extends Application<ButButConfiguration>
 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
@@ -22,7 +22,7 @@ public class SlashgifApplication extends Application<SlashgifConfiguration>
 	{
 		try
 		{
-			new SlashgifApplication().run(args);
+			new ButButApplication().run(args);
 		}
 		catch (Exception e)
 		{
@@ -33,25 +33,25 @@ public class SlashgifApplication extends Application<SlashgifConfiguration>
 	@Override
 	public String getName()
 	{
-		return "slashgif";
+		return "ButBut";
 	}
 
 	@Override
-	public void initialize(Bootstrap<SlashgifConfiguration> bootstrap)
+	public void initialize(Bootstrap<ButButConfiguration> bootstrap)
 	{
 		bootstrap.addBundle(getGuiceBundle(bootstrap));
 	}
 
 	private GuiceBundle getGuiceBundle(Bootstrap<?> bootstrap)
 	{
-		return GuiceBundle.<SlashgifConfiguration>newBuilder().addModule(new ClassPathScanningModule("com.github.tsar_industries.slashgif"))
-				.setConfigClass(SlashgifConfiguration.class)
-				.enableAutoConfig("com.github.tsar_industries.slashgif")
+		return GuiceBundle.<ButButConfiguration>newBuilder().addModule(new ClassPathScanningModule("com.github.tsar_industries.butbut"))
+				.setConfigClass(ButButConfiguration.class)
+				.enableAutoConfig("com.github.tsar_industries.butbut")
 				.build(Stage.DEVELOPMENT);
 	}
 
 	@Override
-	public void run(SlashgifConfiguration configuration,
+	public void run(ButButConfiguration configuration,
 					Environment environment)
 	{
 

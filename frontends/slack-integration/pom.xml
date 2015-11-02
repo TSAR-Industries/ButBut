@@ -4,21 +4,22 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<artifactId>frontends</artifactId>
-		<groupId>com.github.tsar-industries.slashgif.frontends</groupId>
+		<groupId>com.github.tsar-industries.butbut.frontends</groupId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.tsar-industries.slashgif.frontends.slack-integration</groupId>
+	<groupId>com.github.tsar-industries.butbut.frontends.slack-integration</groupId>
 	<artifactId>slack-integration</artifactId>
+	<name>ButBut - Slack Integration</name>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.service-layer.api</groupId>
+			<groupId>com.github.tsar-industries.butbut.service-layer.api</groupId>
 			<artifactId>api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.tsar-industries.slashgif.service-layer.service</groupId>
+			<groupId>com.github.tsar-industries.butbut.service-layer.service</groupId>
 			<artifactId>service</artifactId>
 			<scope>runtime</scope>
 		</dependency>
